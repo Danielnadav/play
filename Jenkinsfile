@@ -5,7 +5,8 @@ pipeline {
             steps {
                 sh 'echo "Hello World"'
                 sh '''
-                    echo "Multiline shell steps works too"
+                    docker -version
+                    docker ps -a
                     ls -lah
                 '''
             }
