@@ -7,6 +7,7 @@ pipeline {
                 sh '''
                     df -h
                     ls -lah
+                    pwd 
                 '''
                 sh 'echo "Finished"'
             }
