@@ -3,11 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // sh 'echo "first step"'
+                sh 'echo "first step"'
                 sh '''
                     df -h
                     ls -lah
                 '''
+                sh 'echo "Finished"'
             }
         }
     }
