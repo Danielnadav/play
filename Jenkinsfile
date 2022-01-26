@@ -7,8 +7,8 @@ pipeline {
                 sh '''
                     df -h
                     ls -lah
-                    pwd 
                 '''
+                sh 'python test.py'
                 sh 'echo "Finished"'
             }
         }
