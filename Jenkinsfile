@@ -6,6 +6,7 @@ pipeline {
                 sh 'echo "first step"'
                 sh '''
                     export PYTHONPATH="${PYTHONPATH}:/test.py/"
+                    yum install pyhon -y 
                     df -h
                     ls -lah
                     echo $PATH
