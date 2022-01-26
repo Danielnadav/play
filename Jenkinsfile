@@ -9,6 +9,7 @@ pipeline {
                     df -h
                     ls -lah
                     echo $PATH
+                    which python
                     python ./test.py
                 '''
                 sh 'echo "Finished"'
