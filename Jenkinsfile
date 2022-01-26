@@ -3,10 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello World"'
+                sh 'echo "first step"'
                 sh '''
-                    docker -version
-                    docker ps -a
+                    df -h
                     ls -lah
                 '''
             }
