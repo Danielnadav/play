@@ -7,7 +7,7 @@ pipeline {
                 sh '''
                     df -h
                     ls -lah
-                    python test.py
+                    python3 test.py
                 '''
                 // sh 'python test.py'
                 sh 'echo "Finished"'
