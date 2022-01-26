@@ -7,8 +7,8 @@ pipeline {
                 sh '''
                     df -h
                     ls -lah
-                    echo $path
-                    // python3 test.py
+                    echo $PATH
+                    python3 ./test.py
                 '''
                 sh 'echo "Finished"'
             }
