@@ -1,10 +1,10 @@
 pipeline {
-    agent none
+    agent agent1
     stages {
         stage('Build') {
             agent {
-                docker {
-                    image 'python:2-alpine'
+                any {
+                    image 'alpine:3.15'
                 }
             }
             steps {
@@ -14,3 +14,5 @@ pipeline {
 
     }
 }
+
+
