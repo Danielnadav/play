@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile sources/datatypes.py'
+                sh 'docker -version'
             }
         }
 
