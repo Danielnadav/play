@@ -7,9 +7,9 @@ pipeline {
             }
             
         }
-        steps('java-version-test') {
+        stage('JavaTest') {
             steps {
-                sh 'java -version'
+                sh 'ps -ef'
             }
         }
 
