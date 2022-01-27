@@ -5,18 +5,14 @@ pipeline {
             steps {
                 sh 'docker -v'
             }
-
+            
         }
-
-    }
-    stages {
-        stage('test') {
+        steps('java-version-test') {
             steps {
                 sh 'java -version'
             }
-            
-
         }
+
     }
 }
 
