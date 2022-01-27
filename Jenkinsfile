@@ -9,7 +9,7 @@ pipeline {
         }
         stage('JavaTest') {
             steps {
-                sh 'java -version'
+                sh 'docker ps -a'
             }
         }
 
