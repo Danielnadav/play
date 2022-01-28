@@ -10,6 +10,7 @@ pipeline {
         stage('iotest') {
             steps {
                 sh 'python -v'
+                sh 'ls -la'
             }
         }
 
