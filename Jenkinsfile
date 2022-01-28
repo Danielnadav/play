@@ -7,9 +7,9 @@ pipeline {
             }
             
         }
-        stage('JavaTest') {
+        stage('iotest') {
             steps {
-                sh 'java -v'
+                sh 'top'
             }
         }
 
