@@ -9,7 +9,7 @@ pipeline {
         }
         stage('iotest') {
             steps {
-                sh 'top'
+                sh 'python -v'
             }
         }
 
