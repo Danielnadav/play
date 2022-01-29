@@ -24,17 +24,17 @@ pipeline {
                 sh 'ls -la'
             }
         }
-        post {
-            always {
+        // post {
+        //     always {
 
-            }
-            success {
+        //     }
+        //     success {
 
-            }
-            failure {
+        //     }
+        //     failure {
 
-            }
-        }
+        //     }
+        // }
 
     }
 }
