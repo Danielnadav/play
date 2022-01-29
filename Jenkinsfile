@@ -7,10 +7,32 @@ pipeline {
             }
             
         }
-        stage('iotest') {
+        stage('test') {
+            when {
+                expression {
+                    BRANCH_NAME == 'main'
+                }
+            }
             steps {
                 sh 'python -v'
                 sh 'ls -la'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'python -v'
+                sh 'ls -la'
+            }
+        }
+        post {
+            always {
+
+            }
+            success {
+
+            }
+            failure {
+
             }
         }
 
