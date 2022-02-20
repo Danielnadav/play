@@ -10,7 +10,7 @@ pipeline {
         stage('test') {
             when {
                 expression {
-                    BRANCH_NAME == 'main'
+                    BRANCH_NAME == 'dev'
                 }
             }
             steps {
@@ -24,17 +24,17 @@ pipeline {
                 sh 'ls -la'
             }
         }
-        // post {
-        //     always {
+        post {
+            always {
 
-        //     }
-        //     success {
+            }
+            success {
 
-        //     }
-        //     failure {
+            }
+            failure {
 
-        //     }
-        // }
+            }
+        }
 
     }
 }
